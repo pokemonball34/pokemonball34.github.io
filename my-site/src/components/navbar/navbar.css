@@ -1,0 +1,109 @@
+.App__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: fixed;
+    z-index: 2;
+}
+
+.App__navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.App__navbar-logo img {
+        height: auto; 
+        width: auto; 
+        max-width: 300px; 
+        max-height: 100px;
+}
+
+.App__navbar-dir {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;    
+}
+
+.App__navbar-dir li {
+    margin: 0rem 1rem;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.App__navbar-dir li div {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.App__navbar-dir li a {
+    color: var(--gray-tone);
+    text-decoration: none;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+    transition: all 0.3s ease-in-out;
+}
+
+.App__navbar-dir li a:hover {
+    color: var(--second-tone);
+}
+
+.App__navbar-menu {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--second-tone);
+}
+
+.App__navbar-menu svg {
+    width: 70%;
+    height: 70%;
+    color: var(--white-tone);
+}
+
+.App__navbar-menu div {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    padding: 1rem;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+     
+    background-color: var(--white-tone);
+    background-size: cover;
+    background-repeat: repeat;
+    box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+}
+
+@media screen and (max-width: 900px) {
+    .App__navbar-dir {
+        display: none;
+    }
+}
+
+.App__flex p-text {
+    
+}

@@ -1,9 +1,21 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Banner, Navbar } from './components';
+import { About, Footer, Header, Work } from './containers';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
+      
+      <Header />
+      <Navbar />
+      <Banner />
+      <Header />
+      <About />
+      <Work />
+      <Footer />
+      
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -23,3 +35,4 @@ function App() {
 }
 
 export default App;
+
